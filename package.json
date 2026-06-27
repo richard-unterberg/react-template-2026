@@ -3,10 +3,34 @@
   "version": "1.0.0",
   "description": "my \"ready-steady-go\" template for modern web projects. pre-configured with a meta framework, useful defaults and critical css extraction",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "biome lint --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "check:knip": "pnpm knip",
+    "prepare": "lefthook install",
+    "verify": "pnpm format && pnpm run lint && pnpm check:knip && pnpm run typecheck"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.1",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "knip": "^6.20.0",
+    "lefthook": "^2.1.9",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.33.2"
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "packageManager": "pnpm@11.8.0"
 }
