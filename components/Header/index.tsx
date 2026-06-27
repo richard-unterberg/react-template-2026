@@ -24,7 +24,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="start-without-beasties" className="hover:underline">
+              <a href="/start-without-beasties" className="hover:underline">
                 Without Beasties
               </a>
             </li>
