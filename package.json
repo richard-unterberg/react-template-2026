@@ -1,0 +1,12 @@
+{
+  "name": "webproject-template-2026",
+  "version": "1.0.0",
+  "description": "my \"ready-steady-go\" template for modern web projects. pre-configured with a meta framework, useful defaults and critical css extraction",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.2"
+}
