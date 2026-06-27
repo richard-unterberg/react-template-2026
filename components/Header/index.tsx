@@ -1,11 +1,17 @@
+import { usePageContext } from 'vike-react/usePageContext'
 import LayoutComponent from '@/components/LayoutComponent'
 import ThemeToggle from '@/components/theme/ThemeToggle'
 
 const Header = () => {
+  const { urlParsed } = usePageContext()
+
+  // start-without-beasties
+  const withoutBeasties = urlParsed.pathname.startsWith('/start-without-beasties')
+
   return (
     <header
       className="bg-base-100 w-full relative h-16 border-b border-b-px border-base-muted-light"
-      data-beasties-container
+      {...(!withoutBeasties && { 'data-beasties-container': true })}
     >
       <LayoutComponent className="flex items-center justify-between h-full">
         <h1 className=" text-xl font-bold z-2 relative">react-template-2026</h1>
@@ -17,8 +23,8 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline">
-                About
+              <a href="/start-without-beasties" className="hover:underline">
+                Without Beasties
               </a>
             </li>
           </ul>

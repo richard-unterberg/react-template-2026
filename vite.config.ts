@@ -30,6 +30,7 @@ export default defineConfig({
     tailwindcss(),
     viteBeastiesOutput({
       outputDirectory: 'dist/client',
+      explicitContainersOnly: true,
       beastiesOptions: {
         allowRules: [/data-theme=.*dark/, /data-theme=.*light/, /^:where\(\.(?:[^ >+~)]*\\:)*-?space-[xy]-/],
       },
