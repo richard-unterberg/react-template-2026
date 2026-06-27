@@ -35,7 +35,6 @@ jobs:
         with:
           path: node_modules
           key: node_modules-${{hashFiles('package-lock.json')}}
-          restore-keys: node_modules-
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -43,7 +42,7 @@ jobs:
       - name: Build Page
         env:
           PAGES_BASE_PATH: /${{ github.event.repository.name }}
-        run: pnpm run 
+        run: pnpm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
