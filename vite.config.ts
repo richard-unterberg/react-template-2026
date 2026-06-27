@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url'
 // import tailwindcss from '@tailwindcss/vite'
 // import { viteBeastiesOutput } from '@unterberg/vite-beasties-output'
 import react from '@vitejs/plugin-react'
-// import vike from 'vike/plugin'
+import vike from 'vike/plugin'
 import { defineConfig } from 'vite'
 import tsConf from './tsconfig.json' with { type: 'json' }
 
@@ -25,7 +25,7 @@ const base = pagesBasePath ? `${pagesBasePath}/` : '/'
 export default defineConfig({
   base,
   plugins: [
-    // vike(),
+    vike(),
     react(),
     // tailwindcss(),
     // viteBeastiesOutput({

@@ -5,13 +5,14 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client", "react", "react-dom"],
+    "types": ["vite/client", "vike-react"],
     "noEmit": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "paths": {
+      "@/components/*": ["./components/*"],
       "@/root/*": ["./*"]
     }
   },
