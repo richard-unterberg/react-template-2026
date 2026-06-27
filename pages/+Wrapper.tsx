@@ -1,12 +1,7 @@
-import ThemeBootstrap from '@/components/theme/ThemeBootstrap'
+import '@/components/theme/styles/tailwind.css'
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <>
-      <ThemeBootstrap />
-      {children}
-    </>
-  )
+  return <>{children}</>
 }
 
 export default Wrapper

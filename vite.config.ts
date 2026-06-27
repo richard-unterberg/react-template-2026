@@ -1,7 +1,7 @@
 import path, { dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-// import tailwindcss from '@tailwindcss/vite'
-// import { viteBeastiesOutput } from '@unterberg/vite-beasties-output'
+import tailwindcss from '@tailwindcss/vite'
+import { viteBeastiesOutput } from '@unterberg/vite-beasties-output'
 import react from '@vitejs/plugin-react'
 import vike from 'vike/plugin'
 import { defineConfig } from 'vite'
@@ -27,18 +27,13 @@ export default defineConfig({
   plugins: [
     vike(),
     react(),
-    // tailwindcss(),
-    // viteBeastiesOutput({
-    //   outputDirectory: 'dist/client',
-    //   beastiesOptions: {
-    //     allowRules: [
-    //       /data-theme=.*dark/,
-    //       /data-theme=.*light/,
-    //       /^:root:has\(input\.theme-controller/,
-    //       /^:where\(:root\)$/,
-    //     ],
-    //   },
-    // }),
+    tailwindcss(),
+    viteBeastiesOutput({
+      outputDirectory: 'dist/client',
+      beastiesOptions: {
+        allowRules: [/data-theme=.*dark/, /data-theme=.*light/, /^:where\(\.(?:[^ >+~)]*\\:)*-?space-[xy]-/],
+      },
+    }),
   ],
   resolve: {
     alias: pathAliases,
