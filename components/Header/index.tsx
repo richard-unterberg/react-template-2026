@@ -1,5 +1,6 @@
 import { usePageContext } from 'vike-react/usePageContext'
 import LayoutComponent from '@/components/LayoutComponent'
+import Link from '@/components/Link'
 import ThemeToggle from '@/components/theme/ThemeToggle'
 
 // test
@@ -19,14 +20,14 @@ const Header = () => {
         <nav className="absolute h-full w-full top-0 left-0 flex items-center justify-center ">
           <ul className="flex space-x-8">
             <li>
-              <a href="/" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/start-without-beasties" className="hover:underline">
+              <Link href="/start-without-beasties" className="hover:underline">
                 Without Beasties
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
