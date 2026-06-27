@@ -33,7 +33,7 @@ const StartPage = () => {
               the page to ensure that the Beasties output plugin can properly analyze the page and generate the
               necessary CSS for it.
             </p>
-            <Button $variant="primary" $size="lg" className="mt-6">
+            <Button $variant="primary" $size="md" className="mt-6">
               Get Started
             </Button>
           </div>
