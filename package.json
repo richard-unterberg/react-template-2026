@@ -1,7 +1,7 @@
 {
-  "name": "webproject-template-2026",
+  "name": "react-template-2026",
   "version": "1.0.0",
-  "description": "my \"ready-steady-go\" template for modern web projects. pre-configured with a meta framework, useful defaults and critical css extraction",
+  "description": "vite template for modern react projects. pre-configured meta framework, useful defaults, dark/light mode, css inlining, optimized for github pages deploy",
   "scripts": {
     "lint": "biome lint --write .",
     "format": "biome format --write .",
