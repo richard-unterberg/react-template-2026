@@ -1,8 +1,9 @@
-import cm from '@classmatejs/react'
+import ma from '@marmo/react'
 import Button from '@/components/Button'
 import LayoutComponent from '@/components/LayoutComponent'
 
-const GradientTop = cm.div`
+// base
+const GradientTop = ma.div`
   absolute 
   min-w-300 
   left-1/2 w-full h-full
@@ -18,7 +19,6 @@ const GradientTop = cm.div`
   translate-x-[-50%] 
   pointer-events-none
 `
-
 const StartPage = () => {
   return (
     <div data-beasties-container>

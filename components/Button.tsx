@@ -1,4 +1,4 @@
-import cm from '@classmatejs/react'
+import ma from '@marmo/react'
 
 type ButtonVariant = 'default' | 'primary' | 'secondary' | 'ghost' | 'outline'
 type ButtonSize = 'xs' | 'sm' | 'md' | 'lg'
@@ -10,7 +10,7 @@ interface ButtonProps {
   $block?: boolean
 }
 
-const Button = cm.button.variants<ButtonProps>({
+const Button = ma.button.variants<ButtonProps>({
   base: 'btn',
   variants: {
     $variant: {

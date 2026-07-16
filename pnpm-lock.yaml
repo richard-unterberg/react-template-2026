@@ -24,9 +24,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.5.1
         version: 2.5.1
-      '@classmatejs/react':
-        specifier: ^0.2.1
-        version: 0.2.1(react@19.2.7)
+      '@marmo/react':
+        specifier: ^1.0.2
+        version: 1.0.2(react@19.2.7)
       '@tailwindcss/typography':
         specifier: ^0.5.20
         version: 0.5.20(tailwindcss@4.3.1)
@@ -204,11 +204,6 @@ packages:
 
   '@brillout/vite-plugin-server-entry@0.7.19':
     resolution: {integrity: sha512-XIT5xAB4x3XPTLF+WfXI92zFAcIcYZqkFkYY1tpg7wrsTWMzllRF2Fbnzy8S/Dilsw9y1qJOHUVrmLtNp2/6Yw==}
-
-  '@classmatejs/react@0.2.1':
-    resolution: {integrity: sha512-B3KSRMulzDGxZY8IDZ2zuGvdJvThb9cf8sISX8WiII5KNiZOcrT0StGbaKitBV1NHJsyWI9+83eEkz0suOY4dg==}
-    peerDependencies:
-      react: '>=16.8.0'
 
   '@emnapi/core@1.11.0':
     resolution: {integrity: sha512-l9Oo58x0HOP5znGzVhYW9U3e5wVuA4LAZU2AGezTmkhO1CgQRFDhDg4nneHsu/t3WniXg9QrG2nIXL/ZS8ln8Q==}
@@ -396,6 +391,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@marmo/react@1.0.2':
+    resolution: {integrity: sha512-7kUEGItFNp9pIuGUx3wAt5fA563IQE4Gyls7YNnrPPXcpIXU2KbzSRBQCsnhhTZmx14Vhb6+aZz+4n1T4Z50xA==}
+    peerDependencies:
+      react: '>=16.8.0'
 
   '@napi-rs/wasm-runtime@1.1.6':
     resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
@@ -941,8 +941,8 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  beasties@0.4.2:
-    resolution: {integrity: sha512-NvcGjG/7AVUAfRbvrJmHunDQS9uHnE6Q/7AkaPr8oKE8HjOlpjRG5075z/th2Tmlezk3VlaaS8+X9I1RwHJMQw==}
+  beasties@0.4.3:
+    resolution: {integrity: sha512-fIIeLOcbAB/K1kb1HBVJoiq1alHL4RCYBSo5e7HzrNkkgMggXR1Vqt/Z9JWnkfe/qdCo66Ux3QRwZioAIBdWRA==}
     engines: {node: '>=18.0.0'}
 
   boolbase@1.0.0:
@@ -1639,11 +1639,6 @@ snapshots:
       '@brillout/import': 0.2.6
       '@brillout/picocolors': 1.0.31
 
-  '@classmatejs/react@0.2.1(react@19.2.7)':
-    dependencies:
-      react: 19.2.7
-      tailwind-merge: 3.6.0
-
   '@emnapi/core@1.11.0':
     dependencies:
       '@emnapi/wasi-threads': 1.2.2
@@ -1767,6 +1762,11 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@marmo/react@1.0.2(react@19.2.7)':
+    dependencies:
+      react: 19.2.7
+      tailwind-merge: 3.6.0
 
   '@napi-rs/wasm-runtime@1.1.6(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.0)':
     dependencies:
@@ -2132,7 +2132,7 @@ snapshots:
 
   '@unterberg/vite-beasties-output@0.1.16(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
-      beasties: 0.4.2
+      beasties: 0.4.3
       vite: 8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)
 
   '@vitejs/plugin-react@6.0.3(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))':
@@ -2142,7 +2142,7 @@ snapshots:
 
   baseline-browser-mapping@2.10.40: {}
 
-  beasties@0.4.2:
+  beasties@0.4.3:
     dependencies:
       css-select: 6.0.0
       css-what: 7.0.0

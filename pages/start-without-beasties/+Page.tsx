@@ -1,8 +1,8 @@
-import cm from '@classmatejs/react'
+import ma from '@marmo/react'
 import Button from '@/components/Button'
 import LayoutComponent from '@/components/LayoutComponent'
 
-const GradientTop = cm.div`
+const GradientTop = ma.div`
   absolute 
   min-w-300 
   left-1/2 w-full h-full

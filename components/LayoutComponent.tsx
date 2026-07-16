@@ -1,4 +1,4 @@
-import cm from '@classmatejs/react'
+import ma from '@marmo/react'
 
 const LayoutSize = {
   xxs: 'xxs',
@@ -24,7 +24,7 @@ interface LayoutComponentProps {
   $padded?: boolean
 }
 
-const LayoutComponent = cm.div.variants<LayoutComponentProps>({
+const LayoutComponent = ma.div.variants<LayoutComponentProps>({
   base: 'relative mx-auto w-full',
   variants: {
     $size: layoutComponentSizeMapping,
